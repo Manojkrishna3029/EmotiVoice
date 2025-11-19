@@ -1,8 +1,11 @@
-streamlit
-Pillow
+streamlit==1.51.0
+numpy
+librosa
+tensorflow
 matplotlib
+spotipy
+python-dotenv
+scipy
+Pillow
 wavio
 pygame
-spotipy
-numpy
-scipy
