@@ -1,0 +1,6 @@
+pillow
+matplotlib
+customtkinter
+wavio
+pygame
+spotipy

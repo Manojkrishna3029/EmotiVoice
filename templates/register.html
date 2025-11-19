@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles_register.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h2>Register</h2>
+            <form method="POST">
+                <div class="input-group">
+                    <input type="text" name="username" class="input-field" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" name="email" class="input-field" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" class="input-field" placeholder="Password" required>
+                </div>
+                <input type="checkbox" class="check-box" required><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+            <p>Already have an account? <button onclick="location.href='{{ url_for('login') }}'">Login</button></p>
+        </div>
+    </div>
+</body>
+</html>

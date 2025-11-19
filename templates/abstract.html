@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbstractPage</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles_abstract.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="menu-bar">
+        <h1 class="logo">EmotiVoice</h1>
+        <ul>
+        <li><a href="{{ url_for('welcome') }}"><i class="fa-solid fa-house"></i>Home</a></li>
+        <li class="active"><a href="{{ url_for('menupage') }}"><i class="fa-solid fa-bars"></i>Menu</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="{{ url_for('abstract') }}">Abstract</a></li>
+                    <li><a href="{{ url_for('conclusion') }}">Conclusion</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="{{ url_for('aboutus') }}"><i class="fa-solid fa-address-card"></i>About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#"><i class="fa-solid fa-phone"></i>Contact</a></li>    
+        </ul>
+        </div>
+    <div class="content">
+        <h2>Abstract</h2>
+        <p>Fruit quality classification is pivotal in industries like factories and supermarkets, but manual methods are labor-intensive and time-consuming. To address this, a convolutional neural network (CNN) model was crafted using Keras, trained on a dataset of three fruit quality categories: good, bad, and mixed-quality. After rigorous training over 350 epochs, the model achieves an impressive accuracy rate exceeding 95%. By simply inputting a fruit image, the model swiftly classifies its quality, offering insights into its condition. This automated approach not only saves time and resources but also ensures consistent and reliable results. Overall, this CNN-based fruit classification model represents a significant advancement, promising efficient and scalable fruit quality assessment across various industrial sectors.
+</p>
+    </div>
+    <div class="buttons">
+        <button onclick="location.href='{{ url_for('menupage') }}'">Back</button>
+        <button onclick="location.href='#'">Exit</button>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles_login.css') }}">
+    <script>
+        function toggleFields() {
+            var loginType = document.querySelector('input[name="loginType"]:checked').value;
+            var usernameField = document.getElementById('username');
+            var passwordField = document.getElementById('password');
+            usernameField.disabled = false;
+            passwordField.disabled = false;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h2>Login</h2>
+            <form method="POST">
+                <div class="input-group">
+                    <input type="radio" id="user" name="loginType" value="user" onclick="toggleFields()" required>
+                    <label for="user">User</label>
+                    <input type="radio" id="admin" name="loginType" value="admin" onclick="toggleFields()" required>
+                    <label for="admin">Admin</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="username" id="username" class="input-field" placeholder="Username" disabled required>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" id="password" class="input-field" placeholder="Password" disabled required>
+                </div>
+                <input type="checkbox" class="check-box"><span>Remember Me</span>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <p class="account-link">Don't have an account? <a href="{{ url_for('register') }}">Register</a></p>
+            <div class="links-container">
+                <a href="{{ url_for('register') }}" class="link">Forgot Password</a>
+                <a href="{{ url_for('register') }}" class="link">Change Password</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

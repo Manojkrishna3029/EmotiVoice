@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles_index.css') }}">
+    <script>
+        function closeWindow() {
+            window.close();
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Emotion Recognition</h1>
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <input type="file" name="audioFile" accept=".wav" required>
+            <button type="submit">Predict Emotion</button>
+            <label for="language">Select Language:</label>
+            <select name="language" id="language">
+                <option value="telugu">Telugu</option>
+                <!-- Add other language options as needed -->
+            </select>
+            <button type="submit">Show Playlists</button>
+        </form>
+        <div id="output">
+            {% if prediction %}
+            <p>Predicted emotion: {{ prediction }}</p>
+            <img src="{{ url_for('static', filename=prediction + '.jpeg') }}" alt="{{ prediction }}" class="emotion-image">
+            <p>Spotify Playlists:</p>
+            <ul>
+                {% for playlist in playlists %}
+                <li><a href="{{ playlist.url }}" target="_blank">{{ playlist.name }}</a></li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+        <button onclick="location.href='{{ url_for('menupage') }}'">Back</button>
+        <button onclick="closeWindow()">Close</button>
+    </div>
+</body>
+</html>
+
+
+

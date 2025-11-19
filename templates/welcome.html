@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="header">
+        <img src="{{ url_for('static', filename='logo_left.png') }}" alt="Left Logo" class="logo-left">
+        <div class="header-text">
+            <h2>GAYATRI VIDYA PARISHAD<br>COLLEGE FOR DEGREE AND PG COURSES(A)</h2>
+            <p>(Affiliated to Andhra University|Accredited by NAAC|Vishakapatnam-530045)</p>
+        </div>
+        <img src="{{ url_for('static', filename='logo_right.png') }}" alt="Right Logo" class="logo-right">
+    </div>
+    <div class="top">
+        <p>Department of Computer Applications</p>
+    </div>
+    <div class="project-heading">
+        EmotiVoice
+    </div>
+    <div class="container-wrapper">
+        <div class="left-text">
+            <p>PROJECT by<br>Name:K.ManojKrishna<br>Reg.no:PG222302032<br>Course:MCA 4th Sem</p>
+        </div>
+        <div class="container">
+            <div class="buttons">
+                <button onclick="location.href='{{ url_for('login') }}'">Proceed</button>
+                <button onclick="closewindow">Exit</button>
+            </div>
+        </div>
+        <div class="right-text">
+            <p>PROJECT GUIDE<br>Name:Mr A.V.Prabhakar<br>Assistant Professor<br>Department of Computer Applications</p>
+        </div>
+    </div>
+    <script>
+        function closeWindow() {
+            window.close();
+        }
+    </script>
+</body>
+</html>
+
+

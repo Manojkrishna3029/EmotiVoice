@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Speech Emotion Recognition</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles_aboutus.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <div class="menu-bar">
+    <h1 class="logo">EmotiVoice</h1>
+<ul>
+<li><a href="{{ url_for('welcome') }}"><i class="fa-solid fa-house"></i>Home</a></li>
+<li ><a href="{{ url_for('menupage') }}"><i class="fa-solid fa-bars"></i>Menu</a>
+    <div class="sub-menu-1">
+        <ul>
+            <li><a href="{{ url_for('abstract') }}">Abstract</a></li>
+            <li><a href="{{ url_for('conclusion') }}">Conclusion</a></li>
+        </ul>
+    </div>
+</li>
+<li class="active"><a href="{{ url_for('aboutus') }}"><i class="fa-solid fa-address-card"></i>About Us</a>
+  <div class="sub-menu-1">
+    <ul>
+        <li><a href="#values">Core Values</a></li>
+        <li><a href="#highlights">Highlights</a></li>
+    </ul>
+</div></li>
+<li><a href="#">Services</a></li>
+<li><a href="#"><i class="fa-solid fa-phone"></i>Contact</a></li>    
+</ul>
+</div>
+
+  <div class="section-container">
+    <div id="mission" class="section">
+      <div class="text-block">
+        <h2>Our Mission</h2>
+        <p>Our mission is to harness the power of artificial intelligence and machine learning to accurately detect and interpret human emotions through speech. We aim to contribute to the field of human-computer interaction by providing tools that can enhance emotional intelligence in technology.</p>
+      </div>
+    </div>
+
+    <div id="story" class="section">
+      <div class="text-block">
+        <h2>Our Story</h2>
+        <p>This project was initiated as a final year project for my postgraduate studies in Computer Applications at Gayatri vidya college for Degree and PG Courses. Driven by a deep interest in AI and its potential to understand human emotions, I embarked on this journey in 2024. Over the course of the project, I have developed a robust system capable of recognizing various emotions in speech with high accuracy.</p>
+      </div>
+    </div>
+
+    <div id="about-me" class="section">
+      <div class="text-block">
+        <h2>About Me</h2>
+        <div class="profile">
+          <img src="your-photo.jpg" alt="Your Photo">
+          <div>
+            <p>Hello! I am K.ManojKrishna, the sole developer and researcher behind this project. With a background in [Your Background], I specialize in AI and ML. This project is the culmination of my passion for technology and its ability to improve human interaction.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="values" class="section">
+    <div class="text-block">
+      <h2>Core Values</h2>
+      <div class="values">
+        <div class="card">
+          <h3>Innovation</h3>
+          <p>Pushing the boundaries of what AI can achieve in understanding human emotions.</p>
+        </div>
+        <div class="card">
+          <h3>Accuracy</h3>
+          <p>Ensuring precise and reliable emotion detection.</p>
+        </div>
+        <div class="card">
+          <h3>Ethics</h3>
+          <p>Committing to ethical AI practices that respect user privacy and emotional sensitivity.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="highlights" class="section">
+    <div class="text-block">
+      <h2>Project Highlights</h2>
+      <div class="features">
+        <div class="card">
+          <h3>Advanced Algorithms</h3>
+          <p>Utilizing cutting-edge machine learning techniques to analyze speech patterns.</p>
+        </div>
+        <div class="card">
+          <h3>High Accuracy</h3>
+          <p>Achieving impressive accuracy rates in emotion detection.</p>
+        </div>
+        <div class="card">
+          <h3>Wide Applicability</h3>
+          <p>Potential uses in customer service, mental health monitoring, and personalized user experiences.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="text-block">
+      <h2>Future Directions</h2>
+      <p>The journey doesn't end here. I plan to continue refining this project, incorporating more diverse datasets, and exploring real-world applications. The goal is to make this technology accessible and useful in various domains.</p>
+    </div>
+  </div>
+
+  <div id="contact" class="contact">
+    <h2>Connect with Me</h2>
+    <p>I would love to hear your thoughts and feedback! Feel free to reach out to me at "manojkrishna3029@gmail.com". You can also connect with me on [your LinkedIn profile or other professional social media]. Let’s discuss potential collaborations, ideas, or simply share insights on AI and ML.</p>
+    <a href="mailto:manojkrishna3029@gmail.com">manojkrishna3029@gmail.com</a>
+  </div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../static/background1.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 2px solid #000;
+    width: 100%;
+}
+
+.header h2 {
+    flex-grow: 1;
+    font-size: 36px;
+    color: #000;
+    margin: 0;
+    text-align: center;
+}
+
+.header-text p {
+    font-size: 20px;
+    color: #000;
+    margin: 0;
+}
+
+.logo-left, .logo-right {
+    width: 120px;
+    height: auto;
+}
+.top{
+    margin-top: 50px;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+}
+.project-heading{
+    font-family:'Times New Roman';
+    color: black;
+    border: 5px solid #000;
+    border-radius: 20px;
+    padding: 20px 50px;
+    font-size: 36px;
+    margin-top: 120px;
+    background-color: transparent;
+}
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.left-text, .right-text {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: normal;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    text-align: left;
+    color:black
+}
+
+.left-text {
+    left: 300px;
+}
+
+.right-text {
+    right: 200px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #007BFF;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
